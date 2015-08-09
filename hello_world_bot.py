@@ -1,10 +1,11 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-owner = "ojahnn"		# Name des Accounts, an den Fehlermeldungen gesendet werden
+owner = "ojahnn"        # Name des Accounts, an den Fehlermeldungen gesendet werden
 import my_config
 import tweepy
 import traceback
+import time
 
 def login():
     # for info on the tweepy module, see http://tweepy.readthedocs.org/en/
@@ -22,7 +23,7 @@ def login():
     return api
 
 def stick_together_output():
-	output = "Hello World!"
+    output = "Hello World!"
     return output
 
 def tweet_something(debug):
